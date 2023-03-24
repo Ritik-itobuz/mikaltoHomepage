@@ -1,171 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-          crossorigin="anonymous"
-        />
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-          crossorigin="anonymous"
-        ></script>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-        />
-    
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="./assets/css/carousel.css" />
-        <title>SEO Website</title>
-      </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./assets/css/carousel.css" />
+    <title>SEO Website</title>
+  </head>
+  <body>
     <navbar class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid mt-2 px-md-5 mt-sm-3 mb-3">
-          <a class="navbar-brand me-5" href="#"
-            >MIKALTO
-           
-          ></a>
-  
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+      <div class="container-fluid mt-2 px-md-5 mt-sm-3 mb-3">
+        <a class="navbar-brand me-5" href="#">MIKALTO ></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="ms-lg-5 collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav me-auto ml-0 mb-2 mb-lg-0 d-flex flex-column flex-sm-row gap-3"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="ms-lg-5 collapse navbar-collapse"
-            id="navbarSupportedContent"
-          >
-            <ul
-              class="navbar-nav me-auto ml-0 mb-2 mb-lg-0 d-flex flex-column flex-sm-row  gap-3"
+            <li class="nav-item navbar-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item navbar-item">
+              <a class="nav-link" href="#">Our Rooms</a>
+            </li>
+            <li class="nav-item navbar-item">
+              <a class="nav-link" href="#">Page</a>
+            </li>
+            <li class="nav-item navbar-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item navbar-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item navbar-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
-              <li class="nav-item navbar-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item navbar-item">
-                <a class="nav-link" href="#projects">Our Rooms</a>
-              </li>
-              <li class="nav-item navbar-item">
-                <a class="nav-link" href="#">Page</a>
-              </li>
-              <li class="nav-item navbar-item">
-                <a class="nav-link" href="#pricing">Features</a>
-              </li>
-              <li class="nav-item navbar-item">
-                <a class="nav-link" href="#contact">Blogs</a>
-              </li>
-              <li class="nav-item navbar-item">
-                <a class="nav-link" href="#pricing">Contact</a>
-              </li>
+              EN
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">RUS</a></li>
+              <li><a class="dropdown-item" href="#">GER</a></li>
+              <li><a class="dropdown-item" href="#">SPA</a></li>
             </ul>
-            <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  EN
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">RUS</a></li>
-                  <li><a class="dropdown-item" href="#">GER</a></li>
-                  <li><a class="dropdown-item" href="#">SPA</a></li>
-                </ul>
-            </div>
-
-
-           
-              <button
-                class="btn px-4 "
-                type="submit"
-              >
-              <i class="fa-sharp fa-solid fa-bag-shopping  shopIcon"></i>
-              </button>
-            
           </div>
+
+          <button class="btn px-4" type="submit">
+            <i class="fa-sharp fa-solid fa-bag-shopping shopIcon"></i>
+          </button>
         </div>
-      </navbar>
+      </div>
+    </navbar>
 
- 
-      <section class="container d-flex mainsection bg-danger px-md-5 px-2 mx-md-5 hero mt-2 mt-sm-3">
-        
-        <div class="row d-flex align-self-end formsection bg-inherit">
-            <h1>Enjoy your <br>
-                dream vacation</h1>
-                <h6>Quiet and endlessly beautiful hideaway</h6>
-                <button>About US</button>
-            <div class="formBox d-flex container-fluid flex-column gap-3">
-                <form class="formDetails">
-         <h1> Search Room</h1><br>
-         <h6 class="subheading"> Get the latest on our covid 19 response</h6>
-           
-                <div class="form-group d-flex gap-2 formData" >
-                    <div>
-                        Check-in
-                    <input id="dp1" type="date" class="form-control clickable input-md" id="DtChkIn" placeholder="&#xf133;  Check-In">
-                  </div>
-                  <div>
-                    Check-Out
-                  
-                    
-                    <input id="dp2" type="date" class="form-control clickable input-md" id="DtChkOut" placeholder="&#xf133;  Check-Out">
-                  </div>
-                </div>
-              
-                <div class="form-group gap-3">
-                    <label>Adults</label>
-                    <select class="form-control" id="person_number" onchange="finalCost()">
-                        <option value="0"> 0 </option>
-                        <option value="1"> 1 </option>
-                        <option value="2"> 2 </option>
-                        <option value="3"> 3 </option>
-                        <option value="4"> 4 </option>
-                        <option value="5"> 5 </option>
-                        <option value="6"> 6 </option>
-                        <option value="7"> 7 </option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Children</label>
-                    <select class="form-control" id="child_number" onchange="finalCost()">
-                        <option value="0"> 0 </option>
-                        <option value="1"> 1 </option>
-                        <option value="2"> 2 </option>
-                        <option value="3"> 3 </option>
-                        <option value="4"> 4 </option>
-                        <option value="5"> 5 </option>
-                        <option value="6"> 6 </option>
-                        <option value="7"> 7 </option>
-                    </select>
-                </div>
-        
-<button class="availability">Check Availability</button>
+    <section
+      class="container d-flex mainsection bg-danger px-md-5 px-2 mx-md-5 hero mt-2 mt-sm-3"
+    >
+      <div class="row d-flex align-self-end formsection bg-inherit">
+        <h1>
+          Enjoy your <br />
+          dream vacation
+        </h1>
+        <h6>Quiet and endlessly beautiful hideaway</h6>
+        <button>About US</button>
+        <div class="formBox d-flex container-fluid flex-column gap-3">
+          <form class="formDetails">
+            <h1>Search Room</h1>
+            <br />
+            <h6 class="subheading">Get the latest on our covid 19 response</h6>
 
-               
-            </form>
+            <div class="form-group d-flex gap-2 formData">
+              <div>
+                <i class="fa-regular fa-calendar"></i>
+                Check-in
+                <input
+                  id="dp1"
+                  type="date"
+                  class="form-control clickable input-md"
+                  id="DtChkIn"
+                  placeholder="&#xf133;  Check-In"
+                />
+              </div>
+              <div>
+                <i class="fa-regular fa-calendar"></i>
+                Check-Out
+
+                <input
+                  id="dp2"
+                  type="date"
+                  class="form-control clickable input-md"
+                  id="DtChkOut"
+                  placeholder="&#xf133;  Check-Out"
+                />
+              </div>
             </div>
+
+            <div class="form-group gap-3">
+              
+                <i class="fa-solid fa-user mr-2"></i>
+                <label>Adults</label>
+              <select
+                class="form-control"
+                id="person_number"
+                onchange="finalCost()"
+              >
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <i class="fa-sharp fa-regular fa-child-dress"></i>
+              <label>Children</label>
+              <select
+                class="form-control"
+                id="child_number"
+                onchange="finalCost()"
+              >
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+              </select>
+            </div>
+
+            <button class="availability">Check Availability</button>
+          </form>
         </div>
-        
-       
-      </section>
+      </div>
+    </section>
 
-
-      <!-- <section class="container bg-warning d-flex justify-content-center align-self-end px-md-5 px-2 mx-md-5 hero mt-2 mt-sm-3">
+    <!-- <section class="container bg-warning d-flex justify-content-center align-self-end px-md-5 px-2 mx-md-5 hero mt-2 mt-sm-3">
 <div class="bg-danger">
 hi
 </div>
@@ -175,8 +195,5 @@ hello
 
 
       </section> -->
-</body>
+  </body>
 </html>
-
-
-

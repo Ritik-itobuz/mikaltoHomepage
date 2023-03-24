@@ -96,17 +96,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
 }
-@media (max-width: 768px) {
-  .hero-heading {
-    font-size: 50px;
-    font: "Inter", sans-serif;
-    font-weight: 700;
 
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: top;
-  }
-}
 
 .mainsection {
   width: 100vw;
@@ -134,7 +124,7 @@ img {
 }
 @media (max-width: 500px) {
   .formBox {
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 26px;
     padding-top: 0px;
 
@@ -142,14 +132,19 @@ img {
     width: fit-content;
   }
   .formDetails {
+    margin-top: -90px;
     margin-left: -120px;
   }
+  
   .formData {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 }
+.availability{
+    margin-top: 20px;
+  }
 .subheading {
   margin-top: -20px;
 }
