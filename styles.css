@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.btn-warning:hover {
+  background: rgb(0, 255, 164);
+  background: linear-gradient(90deg, rgb(0, 51, 190) 0%, rgb(0, 180, 57) 100%);
+  color: white;
+  border: 1px solid green;
+}
+a:hover {
+  color: red;
+}
+img {
+  max-width: 90%;
+}
+
+/* NAV section */
+.navbar {
+  background-image: none;
+  height: 5rem;
+}
+
+.navbar > a {
+  font-size: 28px;
+}
+
+.navbar li {
+  font-size: 14px;
+}
+
+.navbar-brand {
+  font-size: 20px;
+}
+
+.navbar-item {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.navbar-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #2a37f5;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media (max-width: 1200px) {
+  .navbar > a {
+    font-size: 48px;
+  }
+
+  .navbar li {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding-left: 0.7rem;
+  }
+  .navbar-brand {
+    font-size: 40px;
+  }
+  .dropdown,shopIcon {
+    visibility: hidden;
+  }
+}
+
+/* hero */
+
+.hero {
+  max-width: 90%;
+  /* margin-top: 40rem; */
+  /* background-image: url("../images/HERO\ BG.svg"); */
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 50px;
+    font: "Inter", sans-serif;
+    font-weight: 700;
+
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+  }
+}
+
+.mainsection {
+  width: 100vw;
+  height: 100vh;
+}
+.formsection {
+  width: 25vw;
+  height: 35vh;
+}
+
+
+.formBox {
+  margin-top: -350px;
+
+  padding: 40px 50px;
+  background-color: white;
+  margin-left: 920px;
+  margin-bottom: 20px;
+  margin-right: 350px;
+  border-radius: 45px;
+  /* margin-bottom: 60px;
+    padding: 40px 50px;
+    background-color: #c6badc; */
+  box-shadow: 3px 5px 10px #7527b0;
+}
+@media (max-width: 500px) {
+  .formBox {
+    margin-top: 0px;
+    margin-left: 26px;
+    padding-top: 0px;
+
+    padding: 150px;
+    width: fit-content;
+  }
+  .formDetails {
+    margin-left: -120px;
+  }
+  .formData {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.subheading {
+  margin-top: -20px;
+}
+.availability {
+  background-color: #0087ca;
+}
