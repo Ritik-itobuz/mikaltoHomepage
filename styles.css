@@ -6,6 +6,7 @@ body {
   font-weight: 500;
 }
 
+
 .btn-warning:hover {
   background: rgb(0, 255, 164);
   background: linear-gradient(90deg, rgb(0, 51, 190) 0%, rgb(0, 180, 57) 100%);
@@ -69,6 +70,9 @@ img {
   .navbar li {
     font-size: 18px;
     font-weight: 300;
+  }
+  body{
+    overflow-x: hidden;
   }
 
   .navbar ul {
@@ -486,3 +490,4 @@ button:focus {
   height: 40px;
   width: 40px;
 }
+
