@@ -80,7 +80,8 @@ img {
   .navbar-brand {
     font-size: 40px;
   }
-  .dropdown,shopIcon {
+  .dropdown,
+  shopIcon {
     visibility: hidden;
   }
 }
@@ -97,8 +98,8 @@ img {
   background-size: contain;
 }
 
-
 .mainsection {
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
@@ -106,7 +107,144 @@ img {
   width: 25vw;
   height: 35vh;
 }
+.contentSection {
+  width: 35vw;
+  height: 40vh;
+  margin-top: 20rem;
+  position: relative;
+}
+.imageSection {
+  position: absolute;
+  width: 20vw;
+  height: 60vh;
+  margin-top: 20px;
+  left: 630px;
+}
+.imageSection2 {
+  position: absolute;
+  width: 30vw;
+  height: 40vh;
+  margin-top: 40px;
+  left: 830px;
+}
+.imageSection3 {
+  width: 35vw;
+  height: 40vh;
+  margin-top: 20rem;
+  /* left: 800px; */
+  background-color: inherit;
+}
 
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.leftSlide {
+  height: 100vh;
+  width: 35%;
+
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.leftSlide div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.leftSlide h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.rightSlide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.rightSlide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.sliderContainer .actionButton button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+  background-color: antiquewhite;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+}
+.upButton:hover {
+  color: #222;
+}
+button:focus {
+  outline: none;
+}
+
+.sliderContainer .actionButton .downButton {
+  transform: rotate(90deg);
+}
+
+.sliderContainer .actionButton .upButton {
+  /* transform: translateY(-100%); */
+  transform: rotate(90deg);
+  position:absolute;
+  left:95%;
+}
+
+.midSection {
+  position: absolute;
+  width: 35vw;
+  height: 50vh;
+  top: 25%;
+  left: 60%;
+}
+.detailSection {
+  position: absolute;
+  width: 30%;
+  height: 85%;
+  background-color: #222;
+  margin-left: 0px;
+  margin-top: -60px;
+}
+
+.detailSection2 {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  background-color: #222;
+  margin-left: 32%;
+  margin-top: -60px;
+}
+
+.detailSection3 {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  background-color: #222;
+  margin-left: 32%;
+  margin-top: 320px;
+}
 
 .formBox {
   margin-top: -350px;
@@ -123,31 +261,228 @@ img {
   box-shadow: 3px 5px 10px #7527b0;
 }
 @media (max-width: 500px) {
+  .enjoyYourVacation {
+    position: absolute;
+    top: 3%;
+    text-align: center;
+  }
   .formBox {
-    margin-top: 20px;
+    position: absolute;
+    /* margin-top: 20px; */
     margin-left: 26px;
     padding-top: 0px;
 
     padding: 150px;
-    width: fit-content;
+    width: 20vw;
+    height: 65vh;
   }
   .formDetails {
     margin-top: -90px;
     margin-left: -120px;
+    padding: auto;
   }
-  
+
   .formData {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-}
-.availability{
-    margin-top: 20px;
+  .formsection {
+    margin-top: 10px;
   }
+}
+
+@media (max-width: 500px) {
+  .contentSection {
+    position: absolute;
+    height: 60vh;
+    top: -300px;
+    text-align: center;
+
+    margin-left: 5%;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .imageSection3 {
+    position:absolute;
+    bottom : 0%;
+    left: 14%;
+    width:70vw;
+    height:20vh;
+    z-index:100;
+  }
+  .imageSection {
+    position: absolute;
+    
+    left:3%;
+    top:60%;
+    height: 30vh;
+    width:45vw;
+  }
+  .imageSection2 {
+    position:absolute;
+    left:25%;
+    width:65vw;
+    top:60%;
+    height: 30vh;
+  }
+
+}
+
+@media (max-width:500px)
+{
+ 
+  /* .leftSlide h1 {
+    font-size: 16px;
+    position: absolute;
+   top:32%;
+   visibility: hidden;
+    margin-bottom: 10px;
+  } */
+
+  .rightSlide {
+    width: 100vw;
+  }
+  .leftSlide {
+    display: none;
+  }
+  .sliderContainer .actionButton .upButton {
+    position: absolute;
+    left:90%;
+    border-radius: 50px;
+    opacity: 0.8;
+  }
+  
+  
+
+}
+.availability {
+  margin-top: 20px;
+}
 .subheading {
   margin-top: -20px;
 }
 .availability {
   background-color: #0087ca;
+}
+
+.social-media-management h2 {
+  padding-top: 1rem;
+  font-weight: 200;
+  line-height: 3rem;
+}
+.social-media-management .service-cards-descriptions {
+  font-weight: 200;
+}
+.social-media-management button {
+  border: none;
+  background: transparent;
+}
+.social-media-management {
+  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.09);
+  border-radius: 5px;
+  padding: 2rem;
+}
+.service-cards-container img {
+  width: 40%;
+}
+
+@media (min-width: 768px) {
+  .service-cards-container {
+    margin-top: 170px;
+    margin-bottom: 170px;
+  }
+}
+
+.chooseLogo {
+  width: 40px;
+  height: 40px;
+}
+
+.detailsButton {
+  border-style: solid;
+  border-color: white;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.detailSwipperBg {
+  background-image: url(./resource/detailsSec/hotelSwipper1.jpg);
+  background-size: cover;
+  height: 700px;
+}
+
+.featureList {
+  list-style-type: square;
+}
+
+.bookButton {
+  border-style: solid;
+  border-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.activityBg {
+  background-image: url(./resource/activitySec/hotelPool.jpg);
+  background-size: cover;
+  height: 450px;
+}
+
+.reconnectBg {
+  background-image: url(./resource/activitySec/treeHotel.jpeg);
+  background-size: cover;
+  height: 450px;
+}
+
+.giftCardBg {
+  background-size: cover;
+  height: 550px;
+}
+
+.spaCard {
+  background-image: url(./resource/gitCardSec/spaImg.jpeg);
+}
+
+.gardenCard {
+  background-image: url(./resource/gitCardSec/gardenImg.jpeg);
+}
+
+.kitCard {
+  background-image: url(./resource/gitCardSec/kitImg.jpg);
+}
+
+.picnicCard {
+  background-image: url(./resource/gitCardSec/picnicImg.jpeg);
+}
+
+.servicesButton {
+  border-style: solid;
+  border-color: rgb(0, 110, 255);
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 15%;
+  align-self: center;
+}
+
+.sayHelloCard {
+  height: 65%;
+  width: 30%;
+  top: 17.5%;
+  left: 55%;
+}
+
+.sayHelloBg {
+  background-image: url(./resource/sayHelloSec/poolTopImg.webp);
+  background-size: cover;
+  height: 700px;
+}
+
+.transportLogo {
+  height: 40px;
+  width: 40px;
 }
