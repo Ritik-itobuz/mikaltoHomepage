@@ -4,8 +4,8 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-}
 
+}
 
 .btn-warning:hover {
   background: rgb(0, 255, 164);
@@ -22,7 +22,7 @@ img {
 
 /* NAV section */
 .navbar {
-  background-image: none;
+  background-image:none;
   height: 5rem;
 }
 
@@ -42,7 +42,7 @@ img {
   display: inline-block;
   position: relative;
   color: #0087ca;
-}
+} 
 
 .navbar-item::after {
   content: "";
@@ -60,7 +60,7 @@ img {
 .navbar-item:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} 
 
 @media (max-width: 1200px) {
   .navbar > a {
@@ -68,371 +68,195 @@ img {
   }
 
   .navbar li {
+    
     font-size: 18px;
     font-weight: 300;
   }
-  body{
-    overflow-x: hidden;
-  }
+ 
 
   .navbar ul {
+    position: absolute;
+    top:80%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     background-color: white;
     padding-left: 0.7rem;
+    z-index:100;
   }
   .navbar-brand {
     font-size: 40px;
   }
-  .dropdown,
-  shopIcon {
+  .navbar form {
     visibility: hidden;
-  }
+  };
 }
 
-/* hero */
 
+/* hero section */
 .hero {
-  max-width: 90%;
-  /* margin-top: 40rem; */
-  /* background-image: url("../images/HERO\ BG.svg"); */
-  background-position-x: left;
-  background-position-y: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.mainsection {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-.formsection {
-  width: 25vw;
-  height: 35vh;
-}
-.contentSection {
-  width: 35vw;
-  height: 40vh;
-  margin-top: 20rem;
-  position: relative;
-}
-.imageSection {
-  position: absolute;
-  width: 20vw;
-  height: 60vh;
-  margin-top: 20px;
-  left: 630px;
-}
-.imageSection2 {
-  position: absolute;
-  width: 30vw;
-  height: 40vh;
-  margin-top: 40px;
-  left: 830px;
-}
-.imageSection3 {
-  width: 35vw;
-  height: 40vh;
-  margin-top: 20rem;
-  /* left: 800px; */
-  background-color: inherit;
-}
-
-.sliderContainer {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-}
-
-.leftSlide {
-  height: 100vh;
-  width: 35%;
-
-  top: 0;
-  left: 0;
-  transition: transform 0.5s ease-in-out;
-}
-
-.leftSlide div {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-.leftSlide h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.rightSlide {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 35%;
-  width: 65%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.rightSlide > div {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100%;
-  width: 100%;
-}
-
-.sliderContainer .actionButton button {
-  position: absolute;
-  left: 35%;
-  top: 50%;
-  z-index: 100;
-  background-color: antiquewhite;
-  border: none;
-  color: #aaa;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 5px;
-}
-.upButton:hover {
-  color: #222;
-}
-button:focus {
-  outline: none;
-}
-
-.sliderContainer .actionButton .downButton {
-  transform: rotate(90deg);
-}
-
-.sliderContainer .actionButton .upButton {
-  /* transform: translateY(-100%); */
-  transform: rotate(90deg);
-  position:absolute;
-  left:95%;
-}
-
-.midSection {
-  position: absolute;
-  width: 35vw;
-  height: 50vh;
-  top: 25%;
-  left: 60%;
-}
-.detailSection {
-  position: absolute;
-  width: 30%;
-  height: 85%;
-  background-color: #222;
-  margin-left: 0px;
-  margin-top: -60px;
-}
-
-.detailSection2 {
-  position: absolute;
-  width: 30%;
-  height: 40%;
-  background-color: #222;
-  margin-left: 32%;
-  margin-top: -60px;
-}
-
-.detailSection3 {
-  position: absolute;
-  width: 30%;
-  height: 40%;
-  background-color: #222;
-  margin-left: 32%;
-  margin-top: 320px;
-}
-
-.formBox {
-  margin-top: -350px;
-
-  padding: 40px 50px;
-  background-color: white;
-  margin-left: 920px;
-  margin-bottom: 20px;
-  margin-right: 350px;
-  border-radius: 45px;
-  /* margin-bottom: 60px;
-    padding: 40px 50px;
-    background-color: #c6badc; */
-  box-shadow: 3px 5px 10px #7527b0;
-}
-@media (max-width: 500px) {
-  .enjoyYourVacation {
-    position: absolute;
-    top: 3%;
-    text-align: center;
+    max-width: 90%;
+    /* margin-top: 40rem; */
+    /* background-image: url("../images/HERO\ BG.svg"); */
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
-  .formBox {
-    position: absolute;
-    /* margin-top: 20px; */
-    margin-left: 26px;
-    padding-top: 0px;
-
-    padding: 150px;
-    width: 20vw;
-    height: 65vh;
-  }
-  .formDetails {
-    margin-top: -90px;
-    margin-left: -120px;
-    padding: auto;
-  }
-
-  .formData {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  
+  .mainsection {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
   }
   .formsection {
-    margin-top: 10px;
+    width: 25vw;
+    height: 35vh;
   }
-}
+  .formBox {
+    margin-top: -350px;
+  
+    padding: 40px 50px;
+    background-color: white;
+    margin-left: 920px;
+    margin-bottom: 20px;
+    margin-right: 350px;
+    border-radius: 45px;
+    /* margin-bottom: 60px;
+      padding: 40px 50px;
+      background-color: #c6badc; */
+    box-shadow: 3px 5px 10px #7527b0;
+  }
 
-@media (max-width: 500px) {
+  .subheading {
+    margin-top: -20px;
+  }
+
+  /* hero section ends */
+
+/* 
+  mikalto luxury section starts here */
   .contentSection {
-    position: absolute;
-    height: 60vh;
-    top: -300px;
-    text-align: center;
-
-    margin-left: 5%;
-    width: 75vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-  }
-  .imageSection3 {
-    position:absolute;
-    bottom : 0%;
-    left: 14%;
-    width:70vw;
-    height:20vh;
-    z-index:100;
+    width: 35vw;
+    height: 40vh;
+    margin-top: 20rem;
+    position: relative;
   }
   .imageSection {
     position: absolute;
-    
-    left:3%;
-    top:60%;
-    height: 30vh;
-    width:45vw;
+    width: 20vw;
+    height: 60vh;
+    margin-top: 20px;
+    left: 630px;
   }
   .imageSection2 {
-    position:absolute;
-    left:25%;
-    width:65vw;
-    top:60%;
-    height: 30vh;
-  }
-
-}
-
-@media (max-width:500px)
-{
- 
-  /* .leftSlide h1 {
-    font-size: 16px;
     position: absolute;
-   top:32%;
-   visibility: hidden;
-    margin-bottom: 10px;
-  } */
+    width: 30vw;
+    height: 40vh;
+    margin-top: 40px;
+    left: 830px;
+  }
+  .imageSection3 {
+    width: 35vw;
+    height: 40vh;
+    margin-top: 20rem;
+    /* left: 800px; */
+    background-color: inherit;
+  }
+/* 
+  mikalto luxury section ends here */
 
-  .rightSlide {
+  /* swiper secttion starts here */
+  .sliderContainer {
+    position: relative;
+    overflow: hidden;
     width: 100vw;
+    height: 100vh;
   }
+  
   .leftSlide {
-    display: none;
+    height: 100vh;
+    width: 35%;
+  
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
   }
-  .sliderContainer .actionButton .upButton {
+  
+  .leftSlide div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .leftSlide h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .rightSlide {
+    height: 100%;
     position: absolute;
-    left:90%;
-    border-radius: 50px;
-    opacity: 0.8;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
   }
   
-  
-
-}
-.availability {
-  margin-top: 20px;
-}
-.subheading {
-  margin-top: -20px;
-}
-.availability {
-  background-color: #0087ca;
-}
-
-.social-media-management h2 {
-  padding-top: 1rem;
-  font-weight: 200;
-  line-height: 3rem;
-}
-.social-media-management .service-cards-descriptions {
-  font-weight: 200;
-}
-.social-media-management button {
-  border: none;
-  background: transparent;
-}
-.social-media-management {
-  box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.09);
-  border-radius: 5px;
-  padding: 2rem;
-}
-.service-cards-container img {
-  width: 40%;
-}
-
-@media (min-width: 768px) {
-  .service-cards-container {
-    margin-top: 170px;
-    margin-bottom: 170px;
+  .rightSlide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
   }
+  
+  .sliderContainer .actionButton button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+    background-color: antiquewhite;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .upButton:hover {
+    color: #222;
+  }
+  button:focus {
+    outline: none;
+  }
+  
+  .sliderContainer .actionButton .downButton {
+    transform: rotate(90deg);
+  }
+  
+  .sliderContainer .actionButton .upButton {
+    /* transform: translateY(-100%); */
+    transform: rotate(90deg);
+    position:absolute;
+    left:95%;
+  }
+
+   /* swiper secttion ends here */
+
+.cardSection {
+    width : 92vw;
+}
+   .cardLogo {
+    width: 40px;
+    height: 40px;
 }
 
-.chooseLogo {
-  width: 40px;
-  height: 40px;
-}
-
-.detailsButton {
-  border-style: solid;
-  border-color: white;
-  padding-left: 8%;
-  padding-right: 8%;
-}
-
-.detailSwipperBg {
-  background-image: url(./resource/detailsSec/hotelSwipper1.jpg);
-  background-size: cover;
-  height: 700px;
-}
-
-.featureList {
-  list-style-type: square;
-}
-
-.bookButton {
-  border-style: solid;
-  border-color: white;
-  padding-left: 5%;
-  padding-right: 5%;
-}
 
 .activityBg {
-  background-image: url(./resource/activitySec/hotelPool.jpg);
+  background-image: url("http://localhost:2000/currency/$");
   background-size: cover;
   height: 450px;
 }
@@ -443,7 +267,8 @@ button:focus {
   height: 450px;
 }
 
-.giftCardBg {
+
+.giftCardBg{
   background-size: cover;
   height: 550px;
 }
@@ -464,8 +289,8 @@ button:focus {
   background-image: url(./resource/gitCardSec/picnicImg.jpeg);
 }
 
-.servicesButton {
-  border-style: solid;
+.servicesButton{
+  border-style: solid ;
   border-color: rgb(0, 110, 255);
   padding-left: 1%;
   padding-right: 1%;
@@ -481,9 +306,26 @@ button:focus {
 }
 
 .sayHelloBg {
-  background-image: url(./resource/sayHelloSec/poolTopImg.webp);
+
   background-size: cover;
   height: 700px;
+}
+
+
+.headShot {
+  height: 90px;
+  width: 90px;
+  border-radius: 90px;
+}
+
+.reviewStarLogo {
+  margin-top: -10px;
+  height: 100px;
+  width: 100px;
+}
+
+.reviewSec {
+  background-color: rgb(254, 248, 221);
 }
 
 .transportLogo {
@@ -491,3 +333,384 @@ button:focus {
   width: 40px;
 }
 
+.bridgeBg {
+  background-image: url(./resource/natureSec/footBridge.jpg);
+  background-size: cover;
+  height: 700px;
+}
+
+.jungleBg {
+  background-image: url(./resource/natureSec/homeJungle.jpg);
+  background-size: cover;
+  height: 338px;
+}
+
+.plantBg {
+  background-image: url(./resource/natureSec/tree.jpeg);
+  background-size: cover;
+  height: 338px;
+}
+
+.joinButton {
+  border: none;
+  background: rgb(0, 110, 255);;
+  width: 20%;
+  padding: 1%;
+  align-self: center;
+}
+
+.natureBg {
+  background: rgb(255, 243, 219);
+}
+
+.natureBgFlexBox {
+  margin-top: -3%;
+}
+/* .enjoyYourVacation {
+  position: absolute;
+  top:40%;
+  left:12%;
+  width : 30vw;
+  color:white;
+  text-align: start;
+} */
+
+
+
+
+
+  @media (max-width: 500px) {
+
+    /* hero section */
+    .enjoyYourVacation {
+      position: absolute;
+      top: 3%;
+      text-align: center;
+    }
+    .formBox {
+      position: absolute;
+      /* margin-top: 20px; */
+      margin-left: 26px;
+      padding-top: 0px;
+  
+      padding: 150px;
+      width: 20vw;
+      height: 65vh;
+    }
+    .formDetails {
+      margin-top: -90px;
+      margin-left: -120px;
+      padding: auto;
+    }
+  
+    .formData {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .formsection {
+      margin-top: 10px;
+    }
+    /* hero section ends */
+
+    /*mikalto luxury section starts */
+    .contentSection {
+        position: absolute;
+        height: 60vh;
+        top: -300px;
+        text-align: center;
+    
+        margin-left: 5%;
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+      .imageSection3 {
+        position:absolute;
+        bottom : 0%;
+        left: 14%;
+        width:70vw;
+        height:20vh;
+        z-index:100;
+      }
+      .imageSection {
+        position: absolute;
+        
+        left:3%;
+        top:60%;
+        height: 30vh;
+        width:45vw;
+      }
+      .imageSection2 {
+        position:absolute;
+        left:25%;
+        width:65vw;
+        top:60%;
+        height: 30vh;
+      }
+
+
+    /*mikalto luxury section ends */
+.cardTitle {
+    margin-left:20%;
+}
+    .cardContainer {
+        flex-direction: column;
+    }
+
+    .activityFlexBox {
+      flex-direction: column;
+  }
+  .natureSec {
+    flex-direction: column;
+   }
+   .natureBgFlexBox{
+    flex-direction: column;
+   }
+   .activitySec {
+    display: none;
+   }
+   .servicesButton {
+    width : 60vw;
+   }
+   .mapSec {
+    flex-direction: column;
+}
+.mapContainer {
+display: none;
+}
+.natureSec {
+  display: none;
+}
+   
+
+}
+
+
+
+.travel-section {
+  flex-direction: column;
+  background-color: #fffaf6;
+  padding: 1rem;
+}
+
+.travel-section-images img {
+  width: 80%;
+}
+
+.travel-section-details {
+  justify-content: center;
+  align-items: center;
+}
+
+.travel-section-details button {
+  background-color: #05014a;
+}
+
+.update-section > div {
+  border: 0.5px solid #666362;
+  padding: 0.7rem;
+  width: 95%;
+}
+
+.update-section > div > input {
+  border: none;
+  width: 80%;
+}
+
+.update-section > div > button {
+  background-color: #05014a;
+}
+
+footer > div {
+  flex-direction: column;
+}
+
+footer p {
+  font-size: 10px;
+  padding: 10px 0 0 0;
+}
+
+footer img {
+  width: 5%;
+}
+
+footer hr {
+  background-color: #666362;
+  color: #666362;
+  height: 1px;
+}
+
+.select-language-footer {
+  display: flex;
+}
+
+.select-language-footer > div {
+  display: none !important;
+}
+
+@media screen and (min-width: 960px) {
+
+  footer {
+    padding: 0 10rem;
+  }
+
+  .navbar-icons img {
+    width: 30%;
+  }
+
+  .page-banner {
+    flex-direction: row;
+  }
+
+  .page-banner-heading {
+    width: 50%;
+  }
+
+  .page-banner-heading h4 {
+    width: 60%;
+  }
+
+  .page-banner-form {
+    width: 30%;
+    height: fit-content;
+    left: -8%;
+  }
+
+  .form-date-inputs {
+    width: 48%;
+  }
+
+  .page-banner-right-arrow {
+    width: 5%;
+  }
+
+  .homestay-adds-details {
+    padding: 10%;
+  }
+
+  .homestay1 {
+    top: -2rem;
+    left: 2rem;
+    width: 50%;
+    height: 45vh;
+  }
+
+  .homestay2 {
+    width: 50%;
+    top: 15rem;
+    left: 15rem;
+  }
+
+  .homestay3 {
+    width: 55%;
+    top: 20rem;
+    left: 3rem;
+  }
+
+  .show-rooms {
+    flex-direction: row;
+  }
+
+  .section-why-choose-our-hostel {
+    flex-direction: row;
+  }
+
+  .activity-pool-time {
+    flex-direction: row;
+  }
+
+  .activity-pool-time-details {
+    width: 60vw;
+    padding: 5%;
+  }
+
+  .services {
+    width: 22%;
+  }
+
+  .services-banner > div {
+    width: 30%;
+    height: fit-content;
+    position: relative;
+    padding: 4rem !important;
+    top: 1.5rem;
+    left: 20%;
+  }
+
+  .location-section {
+    flex-direction: row;
+  }
+
+  .location-travel-option img {
+    width: 20%;
+    height: 35%;
+  }
+
+  .location-map {
+    width: 50%;
+  }
+
+  .location-map > p > iframe {
+    padding: 10% 10% 10% 0;
+    width: 100%;
+    height: 90vh;
+  }
+
+  .location-travel-options {
+    width: 50%;
+    padding: 5rem 0 5rem 5rem !important;
+  }
+
+  .travel-section {
+    flex-direction: row;
+  }
+
+  .travel-section-images {
+    top: -5rem;
+  }
+
+  .travel-picture-small {
+    width: 100vw;
+  }
+
+  .small-travel-picture {
+    width: 220% !important;
+  }
+
+  .update-section > div {
+    width: 45%;
+  }
+
+  footer > div {
+    flex-direction: row;
+  }
+
+  footer img {
+    width: 10%;
+  }
+
+  footer > div > div {
+    width: 15%;
+  }
+
+  .select-language-footer {
+    display: flex;
+  }
+
+  .select-language-footer > div {
+    display: flex !important;
+    right: 0;
+  }
+}
+
+.footerLogo {
+  object-fit: cover;
+  width: 195%;
+}
+.footerBackground {
+  background-color:rgb(1, 1, 53);
+}
