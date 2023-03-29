@@ -4,7 +4,6 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-
 }
 
 .btn-warning:hover {
@@ -22,7 +21,7 @@ img {
 
 /* NAV section */
 .navbar {
-  background-image:none;
+  background-image: none;
   height: 5rem;
 }
 
@@ -42,7 +41,7 @@ img {
   display: inline-block;
   position: relative;
   color: #0087ca;
-} 
+}
 
 .navbar-item::after {
   content: "";
@@ -54,13 +53,13 @@ img {
   left: 0;
   background-color: #2a37f5;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.35s ease-out;
 }
 
 .navbar-item:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
-} 
+  transform-origin: bottom right;
+}
 
 @media (max-width: 1200px) {
   .navbar > a {
@@ -68,192 +67,200 @@ img {
   }
 
   .navbar li {
-    
     font-size: 18px;
     font-weight: 300;
   }
- 
 
   .navbar ul {
     position: absolute;
-    top:80%;
+    top: 80%;
     width: 100vw;
     display: flex;
     flex-direction: row;
     background-color: white;
     padding-left: 0.7rem;
-    z-index:100;
+    z-index: 100;
   }
   .navbar-brand {
     font-size: 40px;
   }
   .navbar form {
     visibility: hidden;
-  };
+  }
 }
-
 
 /* hero section */
 .hero {
-    max-width: 90%;
-    /* margin-top: 40rem; */
-    /* background-image: url("../images/HERO\ BG.svg"); */
-    background-position-x: left;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+  max-width: 90%;
+  /* margin-top: 40rem; */
+  /* background-image: url("../images/HERO\ BG.svg"); */
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mainsection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.mainContainerSection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   
-  .mainsection {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-  }
-  .formsection {
-    width: 25vw;
-    height: 35vh;
-  }
-  .formBox {
-    margin-top: -350px;
-  
-    padding: 40px 50px;
-    background-color: white;
-    margin-left: 920px;
-    margin-bottom: 20px;
-    margin-right: 350px;
-    border-radius: 45px;
-    /* margin-bottom: 60px;
+}
+
+.formsection {
+  width: 25vw;
+  height: 35vh;
+}
+.formBox {
+  margin-top: -350px;
+
+  padding: 40px 50px;
+  background-color: white;
+  margin-left: 920px;
+  margin-bottom: 20px;
+  margin-right: 350px;
+  border-radius: 45px;
+  /* margin-bottom: 60px;
       padding: 40px 50px;
       background-color: #c6badc; */
-    box-shadow: 3px 5px 10px #7527b0;
-  }
+  box-shadow: 3px 5px 10px #7527b0;
+}
 
-  .subheading {
-    margin-top: -20px;
-  }
+.subheading {
+  margin-top: -20px;
+}
 
-  /* hero section ends */
+/* hero section ends */
 
 /* 
   mikalto luxury section starts here */
-  .contentSection {
-    width: 35vw;
-    height: 40vh;
-    margin-top: 20rem;
-    position: relative;
-  }
-  .imageSection {
-    position: absolute;
-    width: 20vw;
-    height: 60vh;
-    margin-top: 20px;
-    left: 630px;
-  }
-  .imageSection2 {
-    position: absolute;
-    width: 30vw;
-    height: 40vh;
-    margin-top: 40px;
-    left: 830px;
-  }
-  .imageSection3 {
-    width: 35vw;
-    height: 40vh;
-    margin-top: 20rem;
-    /* left: 800px; */
-    background-color: inherit;
-  }
+.contentSection {
+  width: 35vw;
+  height: 40vh;
+  margin-top: 20rem;
+  position: relative;
+}
+.imageSection {
+  position: absolute;
+  width: 20vw;
+  height: 60vh;
+  margin-top: 20px;
+  left: 730px;
+  z-index: 200;
+}
+.imageSection2 {
+  position: absolute;
+  width: 30vw;
+  height: 40vh;
+  margin-top: 40px;
+  left: 930px;
+  z-index: 300;
+}
+.imageSection3 {
+  position: absolute;
+  width: 35vw;
+  height: 40vh;
+  margin-top: 20rem;
+  left: 720px;
+  z-index: 100;
+  /* left: 800px; */
+  background-color: inherit;
+}
 /* 
   mikalto luxury section ends here */
 
-  /* swiper secttion starts here */
-  .sliderContainer {
-    position: relative;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .leftSlide {
-    height: 100vh;
-    width: 35%;
-  
-    top: 0;
-    left: 0;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .leftSlide div {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
-  .leftSlide h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-  }
-  
-  .rightSlide {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 35%;
-    width: 65%;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .rightSlide > div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .sliderContainer .actionButton button {
-    position: absolute;
-    left: 35%;
-    top: 50%;
-    z-index: 100;
-    background-color: antiquewhite;
-    border: none;
-    color: #aaa;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 5px;
-  }
-  .upButton:hover {
-    color: #222;
-  }
-  button:focus {
-    outline: none;
-  }
-  
-  .sliderContainer .actionButton .downButton {
-    transform: rotate(90deg);
-  }
-  
-  .sliderContainer .actionButton .upButton {
-    /* transform: translateY(-100%); */
-    transform: rotate(90deg);
-    position:absolute;
-    left:95%;
-  }
+/* swiper secttion starts here */
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 70vh;
+}
 
-   /* swiper secttion ends here */
+.leftSlide {
+  height: 100vh;
+  width: 35%;
+
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.leftSlide div {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.leftSlide h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.rightSlide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.rightSlide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.sliderContainer .actionButton button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+  background-color: antiquewhite;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+}
+.upButton:hover {
+  color: #222;
+}
+button:focus {
+  outline: none;
+}
+
+.sliderContainer .actionButton .downButton {
+  transform: rotate(90deg);
+}
+
+.sliderContainer .actionButton .upButton {
+  /* transform: translateY(-100%); */
+  transform: rotate(90deg);
+  position: absolute;
+  left: 95%;
+}
+
+/* swiper secttion ends here */
 
 .cardSection {
-    width : 92vw;
+  width: 92vw;
 }
-   .cardLogo {
-    width: 40px;
-    height: 40px;
+.cardLogo {
+  width: 40px;
+  height: 40px;
 }
-
 
 .activityBg {
   background-image: url("http://localhost:2000/currency/$");
@@ -267,8 +274,7 @@ img {
   height: 450px;
 }
 
-
-.giftCardBg{
+.giftCardBg {
   background-size: cover;
   height: 550px;
 }
@@ -289,8 +295,8 @@ img {
   background-image: url(./resource/gitCardSec/picnicImg.jpeg);
 }
 
-.servicesButton{
-  border-style: solid ;
+.servicesButton {
+  border-style: solid;
   border-color: rgb(0, 110, 255);
   padding-left: 1%;
   padding-right: 1%;
@@ -306,11 +312,9 @@ img {
 }
 
 .sayHelloBg {
-
   background-size: cover;
   height: 700px;
 }
-
 
 .headShot {
   height: 90px;
@@ -353,7 +357,7 @@ img {
 
 .joinButton {
   border: none;
-  background: rgb(0, 110, 255);;
+  background: rgb(0, 110, 255);
   width: 20%;
   padding: 1%;
   align-self: center;
@@ -375,128 +379,166 @@ img {
   text-align: start;
 } */
 
-
-
-
-
-  @media (max-width: 500px) {
-
-    /* hero section */
-    .enjoyYourVacation {
-      position: absolute;
-      top: 3%;
-      text-align: center;
-    }
-    .formBox {
-      position: absolute;
-      /* margin-top: 20px; */
-      margin-left: 26px;
-      padding-top: 0px;
+@media (max-width: 500px) {
+  .sayHelloCard {
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+  }
   
-      padding: 150px;
-      width: 20vw;
-      height: 65vh;
-    }
-    .formDetails {
-      margin-top: -90px;
-      margin-left: -120px;
-      padding: auto;
-    }
-  
-    .formData {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .formsection {
-      margin-top: 10px;
-    }
-    /* hero section ends */
+  /* hero section */
+  .enjoyYourVacation {
+    position: absolute;
+    top: 3%;
+    text-align: center;
+  }
+  .formBox {
+   
+    /* margin-top: 20px; */
+    margin-left: 3%;
+    padding-top: 0px;
 
-    /*mikalto luxury section starts */
-    .contentSection {
-        position: absolute;
-        height: 60vh;
-        top: -300px;
-        text-align: center;
+    padding: 150px;
+    width: 20vw;
+    height: 65vh;
+  }
+  .formDetails {
+    margin-top: -90px;
+    margin-left: -120px;
+    padding: auto;
+    width: 60vw;
     
-        margin-left: 5%;
-        width: 75vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 10px;
-      }
-      .imageSection3 {
-        position:absolute;
-        bottom : 0%;
-        left: 14%;
-        width:70vw;
-        height:20vh;
-        z-index:100;
-      }
-      .imageSection {
-        position: absolute;
-        
-        left:3%;
-        top:60%;
-        height: 30vh;
-        width:45vw;
-      }
-      .imageSection2 {
-        position:absolute;
-        left:25%;
-        width:65vw;
-        top:60%;
-        height: 30vh;
-      }
+  }
 
+  .formData {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .formsection {
+    margin-top: 10px;
+  }
+  /* hero section ends */
 
-    /*mikalto luxury section ends */
-.cardTitle {
-    margin-left:20%;
-}
-    .cardContainer {
-        flex-direction: column;
-    }
+  /*mikalto luxury section starts */
+  .contentSection {
+    position: absolute;
+    height: 60vh;
+    top: -300px;
+    text-align: center;
 
-    .activityFlexBox {
-      flex-direction: column;
+    margin-left: 5%;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .imageSection3 {
+    position: absolute;
+    bottom: 31%;
+    left: 10%;
+    width: 75vw;
+    height: 20vh;
+    z-index: 100;
+  }
+  .imageSection {
+    position: absolute;
+
+    left: 3%;
+    top: 60%;
+    height: 30vh;
+    width: 45vw;
+  }
+  .imageSection2 {
+    position: absolute;
+    left: 32%;
+    width: 60vw;
+    top: 62%;
+    height: 30vh;
+  }
+  .luxuryHeading {
+    margin-left: 70px;
+  }
+
+  /*mikalto luxury section ends */
+  .cardTitle {
+    margin-left: 20%;
+  }
+  .cardContainer {
+    flex-direction: column;
+  }
+
+  .activityFlexBox {
+    flex-direction: column;
   }
   .natureSec {
     flex-direction: column;
-   }
-   .natureBgFlexBox{
-    flex-direction: column;
-   }
-   .activitySec {
+    height:100vh;
+    overflow: hidden;
+    position: relative;
+  }
+ .sideNature {
+  position: absolute;
+  top : 40%;
+  width : 90vw;
+  display: flex;
+  left:28%;
+  align-items: center;
+  
+  
+ }
+  .bridgeBg {
+    height :50vh;
+    position: absolute;
+    top:10px;
+    width: 40vw;
     display: none;
-   }
-   .servicesButton {
-    width : 60vw;
-   }
-   .mapSec {
+  }
+  .plantBg {
+    position:absolute;
+    top: 10px;
+    left:5%;
+    width: 90vw;
+  }
+  .jungleBg {
+    display: none;
+    position: absolute;
+    left : 70%;
+    top : 60%;
+    width : 40vw;
+    height: 40vh;
+  }
+
+  .natureBgFlexBox {
     flex-direction: column;
+  }
+  .activitySec {
+    display: none;
+  }
+  .servicesButton {
+    width: 60vw;
+  }
+  .mapSec {
+    flex-direction: column;
+  }
+  
+  .natureSec {
+    display: none;
+  }
 }
-.mapContainer {
-display: none;
-}
-.natureSec {
-  display: none;
-}
-   
-
-}
-
-
 
 .travel-section {
   flex-direction: column;
   background-color: #fffaf6;
   padding: 1rem;
 }
-
+.mapContainer {
+background-color: #05014a;
+padding: 0px;
+}
 .travel-section-images img {
   width: 80%;
 }
@@ -553,7 +595,6 @@ footer hr {
 }
 
 @media screen and (min-width: 960px) {
-
   footer {
     padding: 0 10rem;
   }
@@ -712,5 +753,13 @@ footer hr {
   width: 195%;
 }
 .footerBackground {
-  background-color:rgb(1, 1, 53);
+  background-color: rgb(1, 1, 53);
 }
+
+@media screen and (max-width: 768px) {
+ 
+  iframe{
+    height: 300px;
+  }
+}
+

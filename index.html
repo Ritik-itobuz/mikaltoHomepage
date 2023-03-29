@@ -103,106 +103,106 @@
     <!-- navbar ends here -->
 
     <!-- hero section starts here -->
-<div id="heroSection" class="container-fluid">
-    <section
-      class="container d-flex mainsection  px-md-5 px-2 mx-md-5 hero mt-2 mt-sm-3" >
-    >
-      <div class="row d-flex align-self-end formsection bg-inherit" >
-        <div class="enjoyYourVacation">
-          <h1>
-            Enjoy your <br />
-            dream vacation
-          </h1>
-          <h6>Quiet and endlessly beautiful hideaway</h6>
-          <button>About US</button>
-        </div>
+    <div id="heroSection" class="container-fluid">
+      <section
+        class="container d-flex mainContainerSection px-md-5 px-2 mx-md-5 hero mt-2 mt-sm-3"
+      >
+        >
+        <div class="row d-flex align-self-end formsection bg-inherit">
+          <div class="enjoyYourVacation">
+            <h1>
+              Enjoy your <br />
+              dream vacation
+            </h1>
+            <h6>Quiet and endlessly beautiful hideaway</h6>
+            <button>About US</button>
+          </div>
 
-        <div class="formBox d-flex container-fluid flex-column gap-3">
-          <form class="formDetails">
-            <h1>Search Room</h1>
-            <br />
-            <h6 class="subheading">Get the latest on our covid 19 response</h6>
+          <div class="formBox d-flex container-fluid flex-column gap-3">
+            <form class="formDetails" onsubmit="handleFormSubmit(event)">
+              <h1>Search Room</h1>
+              <br />
+              <h6 class="subheading">
+                Get the latest on our covid 19 response
+              </h6>
 
-            <div class="form-group d-flex gap-2 formData">
-              <div>
-                <i class="fa-regular fa-calendar"></i>
-                Check-in
-                <input
-                  id="dp1"
-                  type="date"
-                  class="form-control clickable input-md"
-                  id="DtChkIn"
-                  placeholder="&#xf133;  Check-In"
-                />
+              <div class="form-group d-flex gap-2 formData">
+                <div>
+                  <i class="fa-regular fa-calendar"></i>
+                  Check-in
+                  <!-- <input id="checkIn" type="date" placeholder="Check-in-date" type="date" class="border-0 border-bottom"
+                required /> -->
+                  <input
+                    type="date"
+                    class="form-control clickable input-md"
+                    id="checkIn"
+                    placeholder="&#xf133;  Check-In"
+                  />
+                </div>
+                <div>
+                  <i class="fa-regular fa-calendar"></i>
+                  Check-Out
+                  <!-- <input id="checkOut" type="date" placeholder="Check-in-date" class="border-0 border-bottom" required />
+              </div> -->
+
+                  <input
+                    type="date"
+                    class="form-control clickable input-md"
+                    id="checkOut"
+                    placeholder="&#xf133;  Check-Out"
+                  />
+                </div>
               </div>
-              <div>
-                <i class="fa-regular fa-calendar"></i>
-                Check-Out
 
-                <input
-                  id="dp2"
-                  type="date"
-                  class="form-control clickable input-md"
-                  id="DtChkOut"
-                  placeholder="&#xf133;  Check-Out"
-                />
+              <div class="form-group gap-3">
+                <i class="fa-solid fa-user mr-2"></i>
+                <label>Adults</label>
+                <select class="form-control" id="adults">
+                  <!-- <select name="" id="adults" class="border-0 border-bottom"> -->
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                </select>
               </div>
-            </div>
+              <div class="form-group">
+                <i class="fa-sharp fa-regular fa-child-dress"></i>
+                <label>Children</label>
+                <!-- <select name="" id="childrens" class="border-0 border-bottom"> -->
 
-            <div class="form-group gap-3">
-              <i class="fa-solid fa-user mr-2"></i>
-              <label>Adults</label>
-              <select
-                class="form-control"
-                id="person_number"
-                onchange="finalCost()"
-              >
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <i class="fa-sharp fa-regular fa-child-dress"></i>
-              <label>Children</label>
-              <select
-                class="form-control"
-                id="child_number"
-                onchange="finalCost()"
-              >
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-              </select>
-            </div>
+                <select class="form-control" id="childrens">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                </select>
+              </div>
 
-            <button class="availability">Check Availability</button>
-          </form>
+              <button class="availability">Check Availability</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
 
     <!-- hero section ends here -->
 
     <!-- mikalto luxury section starts here -->
     <section
-      class="container d-flex gap-5 px-md-5 px-2 mx-md-5 hero mt-2 mt-sm-3 mainsection" 
+      class="container d-flex gap-5 px-md-5 px-2 mx-md-5 hero mt-2 mt-sm-3 mainsection"
     >
       <div
         class="d-flex flex-column align-items-start gap-4 justify-content-end bg-inherit contentSection"
       >
-        <h3>WELCOME TO</h3>
+        <h3 class="luxuryHeading">WELCOME TO</h3>
 
         <h1>
           The Mikato Luxury<br />
@@ -214,15 +214,16 @@
           consequatur sequi sed omnis dolorum eos possimus illum nam voluptate
         </h6>
         <div>
-          <img class="w-50"
+          <img
+            class="w-50"
             src="https://www.kulfiy.com/wp-content/uploads/Mahendra-Singh-Dhoni-Autograph-.png"
           /> </br>
-          Mahendra Singh Dhoni
+          Mahendra Singh Dhoni - Ex Indian Captain
         </div>
       </div>
       <div class="imageSection" id="luxuryImageSection1"></div>
-      <div class="imageSection2" id="luxuryImageSection2"></div></div>
-      <div class="imageSection3" id="luxuryImageSection3"></div></div>
+      <div class="imageSection2" id="luxuryImageSection2"></div>
+      <div class="imageSection3" id="luxuryImageSection3"></div>
     </section>
 
     <!-- mikalto luxury section ends here -->
@@ -230,34 +231,37 @@
     <!-- swiper section starts here  -->
 
     <section
-      class="container bg-success d-flex gap-5 mx-md-5 hero mt-2 mt-sm-3 mainsection"
+      class="container bg-success d-flex gap-5 mx-md-5 hero mt-2 mt-sm-3 "
     >
       <body>
         <div class="sliderContainer">
           <div class="leftSlide">
             <div style="background-color: pink">
-              <h5>Elegant an comfortable</h5>
-              <h1>Standard Room</h1>
+              <p class="fs-6 text-light">ELEGANCE AND COMFORT</p>
+              <p class="fs-2 text-light">Standard Room</p>
+              <p class="fs-6 text-light" id="priceDataStandard"></p>
+              <p class="fs-6 text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicin.
+              </p>
+
             </div>
             <div style="background-color: gold">
-              <h5>Elegant an comfortable</h5>
-              <h1>Executive Room</h1>
+              <p>Bed:</p>
+              <p>Capacity:</p>
+              <p>Room size:</p>
+              <p>View:</p>
             </div>
             <div style="background-color: beige">
-              <h5>Elegant an comfortable</h5>
-              <h1>Business Room</h1>
+              <p>Queen size Bed</p>
+              <p>2 adults, 1 children</p>
+              <p>55 sqm</p>
+              <p>garden view</p>
             </div>
           </div>
           <div class="rightSlide">
-            <div id="rightSlide1"
-             
-            ></div>
-            <div id="rightSlide2"
-              
-            ></div>
-            <div
-            id="rightSlide3"
-            ></div>
+            <div id="rightSlide1"></div>
+            <div id="rightSlide2"></div>
+            <div id="rightSlide3"></div>
           </div>
           <div class="actionButton">
             <button class="downButton">
@@ -331,7 +335,7 @@
     <!-- activities section starts here -->
     <!-- <section class="container-fluid activitySec mt-5 pt-5"> -->
     <section
-      class="container gap-5 px-md-5 hero mt-2 mt-sm-3 activitySec mainsection"
+      class="container gap-5 px-md-5 hero mt-2 mt-sm-3 activitySec mainsection overflow-hidden"
     >
       <div class="d-flex activityFlexBox">
         <div class="w-50 p-5 bg-primary text-light">
@@ -343,7 +347,7 @@
             cumque suscipit tempora et molestias sit quo non asperiores,
             quisquam earum temporibus vitae iure dolores tempora!
           </p>
-          <!-- <p class="fs-6">Explore More &#10230 </p> -->
+          <p class="fs-6">Explore More →</p>
         </div>
         <div class="w-50 activityBg" id="activity"></div>
       </div>
@@ -383,7 +387,7 @@
       </p>
       <div class="d-flex giftCard p-5 gap-5 cardContainer">
         <div class="w-sm-25">
-          <div class="giftCardBg spaCard mb-3 " id="card1"></div>
+          <div class="giftCardBg spaCard mb-3" id="card1"></div>
           <p class="fs-6 text-primary">WELLNESS</p>
           <p class="fs-2">Dedicated to welness</p>
           <p class="fs-6">
@@ -392,7 +396,7 @@
             dignissimos? Asperiores inventore harum provident recusandae
             mollitia maiores, nam porro eaque.
           </p>
-          <!-- <p class="fs-6 text-primary">Dicover more &#10230</p> -->
+          <p class="fs-6 text-primary">Dicover more →</p>
         </div>
         <div class="w-sm-25">
           <div class="giftCardBg gardenCard mb-3" id="card2"></div>
@@ -404,7 +408,7 @@
             dignissimos? Asperiores inventore harum provident recusandae
             mollitia maiores, nam porro eaque.
           </p>
-          <!-- <p class="fs-6 text-primary">Dicover more &#10230</p> -->
+          <p class="fs-6 text-primary">Dicover more →</p>
         </div>
         <div class="w-sm-25">
           <div class="giftCardBg kitCard mb-3" id="card3"></div>
@@ -416,7 +420,7 @@
             dignissimos? Asperiores inventore harum provident recusandae
             mollitia maiores, nam porro eaque.
           </p>
-          <!-- <p class="fs-6 text-primary">Dicover more &#10230</p> -->
+          <p class="fs-6 text-primary">Dicover more →</p>
         </div>
         <div class="w-sm-25">
           <div class="giftCardBg picnicCard mb-3" id="card4"></div>
@@ -428,7 +432,7 @@
             dignissimos? Asperiores inventore harum provident recusandae
             mollitia maiores, nam porro eaque.
           </p>
-          <!-- <p class="fs-6 text-primary">Dicover more &#10230</p> -->
+          <p class="fs-6 text-primary">Dicover more →</p>
         </div>
       </div>
       <button class="bg-light servicesButton text-primary">
@@ -438,220 +442,271 @@
 
     <!-- experience matters section ends here -->
 
-    
-      <!-- sayHelloSec -->
-      <section class="container-fluid sayHelloSec mt-5" id="new">
-        <div class="sayHelloBg position-relative ">
-          <div class="sayHelloCard bg-light p-5 position-absolute">
-            <p class="fs-2">Say hello <br> to a whole new you</p>
-            <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente voluptatem eos at expedita corporis, fugiat fugit quo in dignissimos? Asperiores inventore harum provident recusandae mollitia maiores, nam porro eaque.</p>
-            <p class="fs-6 text-primary">Dicover more &#10230</p>
-          </div>
+    <!-- sayHelloSec -->
+    <section class="container-fluid sayHelloSec mt-5" id="new">
+      <div class="sayHelloBg position-relative">
+        <div class="sayHelloCard bg-light p-5 position-absolute">
+          <p class="fs-2">
+            Say hello <br />
+            to a whole new you
+          </p>
+          <p class="fs-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            sapiente voluptatem eos at expedita corporis, fugiat fugit quo in
+            dignissimos? Asperiores inventore harum provident recusandae
+            mollitia maiores, nam porro eaque.
+          </p>
+          <p class="fs-6 text-primary">Dicover more →</p>
         </div>
-      </section>
-      <!-- customer review section starts here -->
-      <section class="reviews">
-        <div class="container mt-5 mb-3">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card p-3 mb-2">
-                <div class="d-flex flex-column">
-                  <img src="/resource/reviews/selenaMayer.jpg" alt="review" />
-                  <p>Wonderful new year trip</p>
-                  <p>
-                    One of the best hotels i've ever stayed in. The stuff are very
-                    friendly and helpful, they were so helpful it made me feel
-                    bad. it includes use of the spa, wounderful, it has a...
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card p-3 mb-2">
-                <div class="d-flex flex-column">
-                  <img src="/images/reviews/estherHoward.jpg" alt="review" />
-                  <p>Recommended</p>
-                  <p>
-                    One of the best hotels i've ever stayed in. The stuff are very
-                    friendly and helpful, they were so helpful it made me feel
-                    bad. it includes use of the spa, wounderful, it has a...
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card p-3 mb-2">
-                <div class="d-flex flex-column">
-                  <img src="/images/reviews/janeScopper.jpg" alt="review" />
-                  <p>All good</p>
-                  <p>
-                    One of the best hotels i've ever stayed in. The stuff are very
-                    friendly and helpful, they were so helpful it made me feel
-                    bad. it includes use of the spa, wounderful, it has a...
-                  </p>
-                </div>
+      </div>
+    </section>
+    <!-- customer review section starts here -->
+    <section class="reviews">
+      <div class="container mt-5 mb-3">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card p-3 mb-2">
+              <div class="d-flex flex-column">
+                <img src="/resource/reviews/selenaMayer.jpg" alt="review" />
+                <p>Wonderful new year trip</p>
+                <p>
+                  One of the best hotels i've ever stayed in. The stuff are very
+                  friendly and helpful, they were so helpful it made me feel
+                  bad. it includes use of the spa, wounderful, it has a...
+                </p>
               </div>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="card p-3 mb-2">
+              <div class="d-flex flex-column">
+                <img src="/images/reviews/estherHoward.jpg" alt="review" />
+                <p>Recommended</p>
+                <p>
+                  One of the best hotels i've ever stayed in. The stuff are very
+                  friendly and helpful, they were so helpful it made me feel
+                  bad. it includes use of the spa, wounderful, it has a...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3 mb-2">
+              <div class="d-flex flex-column">
+                <img src="/images/reviews/janeScopper.jpg" alt="review" />
+                <p>All good</p>
+                <p>
+                  One of the best hotels i've ever stayed in. The stuff are very
+                  friendly and helpful, they were so helpful it made me feel
+                  bad. it includes use of the spa, wounderful, it has a...
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-<!-- customer reviews section ends here     -->
+      </div>
+    </section>
+    <!-- customer reviews section ends here     -->
 
- <!-- Maps Sec -->
- <section class="container-fluid mapSec mt-5 mb-5 d-flex mapSec">
-    <div class="w-sm-50 m-5 p-5 d-flex flex-column align-content-center gap-3">
-      <p class="fs-6 text-primary">GETTING HERE</p>
-      <p class="fs-2 ">How to get there?</p>
-      <p class="fs-6 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, aliquam perspiciatis enim officiis,<br> a necessitatibus, aspernatur inventore amet ducimus consequatur itaque alias impedit <br> distinctio placeat molestias voluptas non incidunt debitis?</p>
-      <div class="d-flex gap-3">
-        <img class="transportLogo" src="./resource/mapSec/planeLogo.svg" alt="plane logo not found">
-        <div>
-          <p class="fs-6 fw-semibold">By plane</p>
-          <p class="fs-6 fw-light">Lorem ipsum dolor sit amet. Temporibus, aliquam. Commodi <br> vero qui aliquid iusto atque eaque accusamus? Porro, molestiae?</p>
+    <!-- Maps Sec -->
+    <section class="container-fluid mapSec mt-5 mb-5 d-flex mapSec">
+      <div
+        class="w-sm-50 m-5 p-5 d-flex flex-column align-content-center gap-3"
+      >
+        <p class="fs-6 text-primary">GETTING HERE</p>
+        <p class="fs-2">How to get there?</p>
+        <p class="fs-6">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi,
+          aliquam perspiciatis enim officiis,<br />
+          a necessitatibus, aspernatur inventore amet ducimus consequatur itaque
+          alias impedit <br />
+          distinctio placeat molestias voluptas non incidunt debitis?
+        </p>
+        <div class="d-flex gap-3">
+          <img
+            class="transportLogo"
+            src="./resource/mapSec/planeLogo.svg"
+            alt="plane logo not found"
+          />
+          <div>
+            <p class="fs-6 fw-semibold">By plane</p>
+            <p class="fs-6 fw-light">
+              Lorem ipsum dolor sit amet. Temporibus, aliquam. Commodi <br />
+              vero qui aliquid iusto atque eaque accusamus? Porro, molestiae?
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="d-flex gap-3">
-        <img class="transportLogo" src="./resource/mapSec/busLogo.svg" alt="plane logo not found">
-        <div>
-          <p class="fs-6 fw-semibold">By bus</p>
-          <p class="fs-6 fw-light">Lorem ipsum dolor sit amet. Temporibus, aliquam. Commodi vero <br> qui aliquid iusto atque eaque accusamus? Porro, molestiae?</p>
+        <div class="d-flex gap-3">
+          <img
+            class="transportLogo"
+            src="./resource/mapSec/busLogo.svg"
+            alt="plane logo not found"
+          />
+          <div>
+            <p class="fs-6 fw-semibold">By bus</p>
+            <p class="fs-6 fw-light">
+              Lorem ipsum dolor sit amet. Temporibus, aliquam. Commodi vero
+              <br />
+              qui aliquid iusto atque eaque accusamus? Porro, molestiae?
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="d-flex gap-3">
-        <img class="transportLogo" src="./resource/mapSec/vanLogo.svg" alt="plane logo not found">
-        <div>
-          <p class="fs-6 fw-semibold">By van</p>
-          <p class="fs-6 fw-light">Lorem ipsum dolor sit amet. Temporibus, aliquam. Commodi <br> vero qui aliquid iusto atque eaque accusamus? Porro, molestiae?</p>
+        <div class="d-flex gap-3">
+          <img
+            class="transportLogo"
+            src="./resource/mapSec/vanLogo.svg"
+            alt="plane logo not found"
+          />
+          <div>
+            <p class="fs-6 fw-semibold">By van</p>
+            <p class="fs-6 fw-light">
+              Lorem ipsum dolor sit amet. Temporibus, aliquam. Commodi <br />
+              vero qui aliquid iusto atque eaque accusamus? Porro, molestiae?
+            </p>
+          </div>
         </div>
+        <p class="fs-6 text-primary">Dicover more →</p>
       </div>
-      <p class="fs-6 text-primary">Dicover more &#10230</p>
-    </div>
-    <div class="w-50 p-5 m-5 d-flex align-items-center mapContainer">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0437694976667!2d88.4292219154988!3d22.57746623848064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275a5466e0099%3A0x563fb49fb6394261!2sItobuz%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1679901804910!5m2!1sen!2sin" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </section>
+     <div class="section_10_map col-11 col-md-6 offset-1 py-3">
+          <iframe
+            class="rounded-3 "
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.043901925615!2d88.42922191494593!3d22.57746128518026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275a5466e0099%3A0x563fb49fb6394261!2sItobuz%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1679915271728!5m2!1sen!2sin"
+            width="90%"
+            height="700"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+    </section>
 
-  <!-- natureSection -->
-  <section class=" d-flex gap-2 mt-5 natureBg mb-5 pb-5 natureSec">
-    <div class="w-75 d-flex gap-3 natureBgFlexBox">
-      <div class="w-75 bridgeBg "></div>
-      <div class="w-50 ">
-        <div class="jungleBg "></div>
-        <div class="plantBg mt-4"></div>
+    <!-- natureSection -->
+    <section class="d-flex gap-2 mt-5 natureBg mb-5 pb-5 natureSec">
+      <div class="w-75 d-flex gap-3 natureBgFlexBox">
+        <div class="w-75 bridgeBg"></div>
+        <div class="w-50">
+          <div class="jungleBg"></div>
+          <div class="plantBg mt-4"></div>
+        </div>
       </div>
-    </div>
-    <div class="w-50 d-flex flex-column justify-content-center align-items-center gap-2">
-      <p class="text-primary fs-6 fw-light">SPA & WELLNESS</p>
-      <p class="fs-2">Side by Side with Nature</p>
-      <p class="fs-6 fw-light w-75">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quasi assumenda deleniti, repellat molestiae odit fuga adipisci! A mollitia dolorum, optio vero ullam odit ex!</p>
-      <button class="joinButton text-light">Join Us</button>
-    </div>
-  </section>
+      <div
+        class="w-50 d-flex flex-column justify-content-center sideNature align-items-center gap-2"
+      >
+        <p class="text-primary fs-6 fw-light">SPA & WELLNESS</p>
+        <p class="fs-2">Side by Side with Nature</p>
+        <p >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quasi
+          assumenda deleniti, repellat molestiae odit fuga adipisci! A mollitia
+          dolorum, optio vero ullam odit ex!
+        </p>
+        <button class="joinButton text-light">Join Us</button>
+      </div>
+    </section>
 
-  <section
-  class="py-4 update-section d-flex flex-column justify-content-center align-items-center"
->
-  <p>STORIES DELIVERED STRAIGHT</p>
-  <p class="fs-3">Get News & Update to Your Inbox</p>
-  <div class="d-flex flex-row">
-    <input
-      class="p-2"
-      type="email"
-      placeholder="Enter your email addreess ... "
-    />
-    <button class="p-2 rounded">
-      <a class="text-decoration-none text-light p-4" href="#">Subscribe</a>
-    </button>
-  </div>
-  <p class="grey-color">
-    will be used in accordance with our
-    <a class="text-decoration-none grey-color" href="#"
-      ><u>Privacy Policy</u></a
+    <section
+      class="py-4 update-section d-flex flex-column justify-content-center align-items-center"
     >
-  </p>
-</section>
-<section>
-
-<footer class="d-flex flex-column footerBackground">
-  <div class="d-flex justify-content-around">
-    <div class="d-flex flex-column p-2 ">
-      <div class="p-2 d-flex flex-column align-items-center">
-        <a class="text-decoration-none fs-6 text-light" href="#">Mikalto</a>
-        <a
-          class="text-decoration-none navbar-subheading text-light"
-          href="#"
-          >HOTELS & RESORTS</a
-        >
+      <p>STORIES DELIVERED STRAIGHT</p>
+      <p class="fs-3">Get News & Update to Your Inbox</p>
+      <div class="d-flex flex-row">
+        <input
+          class="p-2"
+          type="email"
+          placeholder="Enter your email addreess ... "
+        />
+        <button class="p-2 rounded">
+          <a class="text-decoration-none text-light p-4" href="#">Subscribe</a>
+        </button>
       </div>
-      <p class="text-light">
-        Contrary to popular belief, Lorem Ipsum is not simply random text.
-        It has roots in a piece of classical Latin literature from 45 BC,
-        making it over 2000 years old.
-      </p>
-      <div class="d-flex flex-row justify-content-around">
-        <p class="text-light fs-6">Follow us:</p>
-        <img src="resource/footer/facebookLogo.svg" alt="facebook" />
-        <img src="resource/footer/twitterLogo.svg" alt="twitter" />
-        <img src="resource/footer/instagramLogo.svg" alt="instagram" />
-        <img src="resource/footer/youtubeLogo.svg" alt="youtube" />
-      </div>
-    </div>
-    <div class="d-flex flex-column p-2">
-      <p class="fs-6 text-light">About</p>
-      <p class="p-1 m-0">
+      <p class="grey-color">
+        will be used in accordance with our
         <a class="text-decoration-none grey-color" href="#"
-          ><u>About Us</u></a
+          ><u>Privacy Policy</u></a
         >
       </p>
-      <p class="text-light p-1 m-0">Careers</p>
-      <p class="text-light p-1 m-0">Blog</p>
-      <p class="text-light p-1 m-0">Contact us</p>
-      <p class="text-light p-1 m-0">Gift Cards</p>
-    </div>
-    <div class="d-flex flex-column p-2">
-      <p class="fs-6 text-light">Services</p>
-      <p class="text-light p-1 m-0">spa</p>
-      <p class="text-light p-1 m-0">Experience</p>
-      <p class="text-light p-1 m-0">Dining</p>
-      <p class="text-light p-1 m-0">Event</p>
-    </div>
-    <div class="d-flex flex-column p-2">
-      <p class="fs-6 text-light">Quick Links</p>
-      <p class="text-light p-1 m-0">Facilities</p>
-      <p class="text-light p-1 m-0">Accomodation</p>
-      <p class="text-light p-1 m-0">Reservation</p>
-      <p class="text-light p-1 m-0">Why choose us</p>
-      <p class="text-light p-1 m-0">Our Restaurant</p>
-    </div>
-    <div class="d-flex flex-column p-2">
-      <p class="fs-6 text-light">Contact Us</p>
-      <p class="text-light pt-4 m-0">TotalFree Customer Support</p>
-      <p class="text-light p-0 m-0">(+123)1500-456-7890</p>
-      <p class="text-light pt-4 m-0">Need Live Support</p>
-      <p class="text-light p-0 m-0">reservation@mikalto.com</p>
-    </div>
-  </div>
-  <div class="d-flex flex-row justify-content-center align-items-center">
-    <hr class="w-75" />
-  </div>
-  <div
-    class="flex-row grey-color gap-4 px-5 position-relative select-language-footer"
-  >
-    <p>Copyright © 2022 Mikalto JWS</p>
-    <p>Privacy</p>
-    <p>Terms</p>
-    <p>Sitemap</p>
-    <div class="flex-row gap-2 p-2 position-absolute">
-      <img src="/resource/footer/globe.svg" alt="globe" />
-      <select name="" id="">
-        <option value="EN">EN</option>
-      </select>
-    </div>
-  </div>
-</footer>
-</section>
-
-
+    </section>
+    <section>
+      <footer class="d-flex flex-column footerBackground">
+        <div class="d-flex justify-content-around">
+          <div class="d-flex flex-column p-2">
+            <div class="p-2 d-flex flex-column align-items-center">
+              <a class="text-decoration-none fs-6 text-light" href="#"
+                >Mikalto</a
+              >
+              <a
+                class="text-decoration-none navbar-subheading text-light"
+                href="#"
+                >HOTELS & RESORTS</a
+              >
+            </div>
+            <p class="text-light">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old.
+            </p>
+            <div class="d-flex flex-row justify-content-around">
+              <p class="text-light fs-6">Follow us:</p>
+              <img src="resource/footer/facebookLogo.svg" alt="facebook" />
+              <img src="resource/footer/twitterLogo.svg" alt="twitter" />
+              <img src="resource/footer/instagramLogo.svg" alt="instagram" />
+              <img src="resource/footer/youtubeLogo.svg" alt="youtube" />
+            </div>
+          </div>
+          <div class="d-flex flex-column p-2">
+            <p class="fs-6 text-light">About</p>
+            <p class="p-1 m-0">
+              <a class="text-decoration-none grey-color" href="#"
+                ><u>About Us</u></a
+              >
+            </p>
+            <p class="text-light p-1 m-0">Careers</p>
+            <p class="text-light p-1 m-0">Blog</p>
+            <p class="text-light p-1 m-0">Contact us</p>
+            <p class="text-light p-1 m-0">Gift Cards</p>
+          </div>
+          <div class="d-flex flex-column p-2">
+            <p class="fs-6 text-light">Services</p>
+            <p class="text-light p-1 m-0">spa</p>
+            <p class="text-light p-1 m-0">Experience</p>
+            <p class="text-light p-1 m-0">Dining</p>
+            <p class="text-light p-1 m-0">Event</p>
+          </div>
+          <div class="d-flex flex-column p-2">
+            <p class="fs-6 text-light">Quick Links</p>
+            <p class="text-light p-1 m-0">Facilities</p>
+            <p class="text-light p-1 m-0">Accomodation</p>
+            <p class="text-light p-1 m-0">Reservation</p>
+            <p class="text-light p-1 m-0">Why choose us</p>
+            <p class="text-light p-1 m-0">Our Restaurant</p>
+          </div>
+          <div class="d-flex flex-column p-2">
+            <p class="fs-6 text-light">Contact Us</p>
+            <p class="text-light pt-4 m-0">TotalFree Customer Support</p>
+            <p class="text-light p-0 m-0">(+123)1500-456-7890</p>
+            <p class="text-light pt-4 m-0">Need Live Support</p>
+            <p class="text-light p-0 m-0">reservation@mikalto.com</p>
+          </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <hr class="w-75" />
+        </div>
+        <div
+          class="flex-row grey-color gap-4 px-5 position-relative select-language-footer"
+        >
+          <p>Copyright © 2022 Mikalto JWS</p>
+          <p>Privacy</p>
+          <p>Terms</p>
+          <p>Sitemap</p>
+          <div class="flex-row gap-2 p-2 position-absolute">
+            <img src="/resource/footer/globe.svg" alt="globe" />
+            <select name="" id="">
+              <option value="EN">EN</option>
+            </select>
+          </div>
+        </div>
+      </footer>
+    </section>
 
     <script src="main.js"></script>
   </body>
