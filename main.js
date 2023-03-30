@@ -125,3 +125,13 @@ function handleFormSubmit(event) {
     document.getElementById("childrens").value = "0";
   });
 }
+
+function handleTitle(event) {
+  event.preventDefault();
+  console.log("hello")
+  const title = document.getElementById("mainTitle");
+  if(title)
+  {
+    title.innerHTML = "Hotels and Resorts"
+  }
+}

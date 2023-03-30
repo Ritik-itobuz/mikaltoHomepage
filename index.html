@@ -36,7 +36,7 @@
     <!-- navbar starts here -->
     <navbar class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid mt-2 px-md-5 mt-sm-3 mb-3">
-        <a class="navbar-brand me-5" href="#">MIKALTO ></a>
+        <a class="navbar-brand me-5 cursor-pointer" id="mainTitle" onclick="handleTitle(event)">MIKALTO > </a>
 
         <button
           class="navbar-toggler"
@@ -86,11 +86,11 @@
             >
               EN
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">RUS</a></li>
               <li><a class="dropdown-item" href="#">GER</a></li>
               <li><a class="dropdown-item" href="#">SPA</a></li>
-            </ul>
+            </ul> -->
           </div>
 
           <button class="btn px-4" type="submit">
@@ -105,7 +105,7 @@
     <!-- hero section starts here -->
     <div id="heroSection" class="container-fluid">
       <section
-        class="container d-flex mainContainerSection px-md-5 px-2 mx-md-5 hero mt-2 mt-sm-3"
+        class="container d-flex mainsection px-md-5 px-2 mx-md-5 hero mt-2 mt-sm-3"
       >
         >
         <div class="row d-flex align-self-end formsection bg-inherit">
@@ -115,7 +115,7 @@
               dream vacation
             </h1>
             <h6>Quiet and endlessly beautiful hideaway</h6>
-            <button>About US</button>
+            <button class="bg-primary mt-3">About US</button>
           </div>
 
           <div class="formBox d-flex container-fluid flex-column gap-3">
@@ -186,7 +186,7 @@
                 </select>
               </div>
 
-              <button class="availability">Check Availability</button>
+              <button class=" bg-primary mt-3 availability">Check Availability</button>
             </form>
           </div>
         </div>
@@ -231,31 +231,58 @@
     <!-- swiper section starts here  -->
 
     <section
-      class="container bg-success d-flex gap-5 mx-md-5 hero mt-2 mt-sm-3 "
+      class="container d-flex gap-5 mx-md-5 hero mt-2 mt-sm-3 "
     >
       <body>
         <div class="sliderContainer">
           <div class="leftSlide">
-            <div style="background-color: pink">
+            <div style="background-color:blue" class="sliderData1 d-flex flex-column align-items-center justify-content-center">
+              
               <p class="fs-6 text-light">ELEGANCE AND COMFORT</p>
-              <p class="fs-2 text-light">Standard Room</p>
-              <p class="fs-6 text-light" id="priceDataStandard"></p>
-              <p class="fs-6 text-light">
+              <p class="fs-1 text-light">Standard Room</p>
+              <p class="fs-6 text-light" id="priceDataStandard">FROM : $150/night</p>
+              <p class="fs-6 text-light text-center">
                 Lorem ipsum dolor sit amet consectetur adipisicin.
               </p>
-
+              <pre>
+Bed :        Queen size Bed 
+Capacity :   2 adults , 1 children
+Room size :  55 sq/m
+View :       lake view
+              </pre>
+              
             </div>
-            <div style="background-color: gold">
-              <p>Bed:</p>
-              <p>Capacity:</p>
-              <p>Room size:</p>
-              <p>View:</p>
+            <div style="background-color:blue" class="sliderData2 d-flex flex-column align-items-center justify-content-center">
+              
+              <p class="fs-6 text-light">CLASSY AND MAGNIFECENT</p>
+              <p class="fs-1 text-light">Executive Room</p>
+              <p class="fs-6 text-light" id="priceDataStandard">FROM : $250/night</p>
+              <p class="fs-6 text-light text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicin.
+              </p>
+              <pre>
+Bed :        Queen size Bed 
+Capacity :   2 adults , 1 children
+Room size :  55 sq/m
+View :       Mountain view
+              </pre>
+              
             </div>
-            <div style="background-color: beige">
-              <p>Queen size Bed</p>
-              <p>2 adults, 1 children</p>
-              <p>55 sqm</p>
-              <p>garden view</p>
+            <div style="background-color:blue" class="sliderData3 d-flex flex-column align-items-center justify-content-center">
+              
+              <p class="fs-6 text-light">EXQUISITE AND SOPHISTICATED</p>
+              <p class="fs-1 text-light">Business Room</p>
+              <p class="fs-6 text-light" id="priceDataStandard">FROM : $500/night</p>
+              <p class="fs-6 text-light text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicin.
+              </p>
+              <pre>
+Bed :        King size Bed 
+Capacity :   2 adults , 1 children
+Room size :  55 sq/m
+View :       Garden view
+              </pre>
+              
             </div>
           </div>
           <div class="rightSlide">
@@ -511,7 +538,7 @@
     <!-- Maps Sec -->
     <section class="container-fluid mapSec mt-5 mb-5 d-flex mapSec">
       <div
-        class="w-sm-50 m-5 p-5 d-flex flex-column align-content-center gap-3"
+        class="w-sm-50 p-5 d-flex flex-column align-content-center gap-3"
       >
         <p class="fs-6 text-primary">GETTING HERE</p>
         <p class="fs-2">How to get there?</p>
