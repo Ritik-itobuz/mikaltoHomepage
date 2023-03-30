@@ -91,6 +91,13 @@ img {
     visibility: hidden;
   }
 }
+#heroSection {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#luxuryImageSection1,#luxuryImageSection2,#luxuryImageSection3 {
+  background-size: contain;
+}
 
 /* hero section */
 .hero {
@@ -103,12 +110,11 @@ img {
   background-size: contain;
 }
 
-.mainsection {
+.mainSection {
   position: relative;
   width: 100vw;
   height: 100vh;
 }
-
 
 .formsection {
   width: 25vw;
@@ -116,8 +122,8 @@ img {
 }
 .formBox {
   margin-top: -350px;
-height: 52vh;
-width: 40vw;
+  height: 55vh;
+  width: 45vw;
   padding: 40px 50px;
   background-color: white;
   margin-left: 920px;
@@ -248,7 +254,7 @@ button:focus {
   /* transform: translateY(-100%); */
   transform: rotate(90deg);
   position: absolute;
-  left: 96.6%;
+  left: 96.7%;
 }
 
 /* swiper secttion ends here */
@@ -369,20 +375,27 @@ button:focus {
 .natureBgFlexBox {
   margin-top: -3%;
 }
+.sideNature {
+  text-align: center;
+}
+.formDetails {
+  overflow: hidden;
+}
+input[type="date"] {
+  width: 150px;
+}
 
-
-@media (max-width: 500px) {
+@media (max-width: 1300px) {
   .sayHelloCard {
     height: 80%;
     width: 80%;
     top: 10%;
     left: 10%;
   }
- 
+
   .sliderContainer {
-    width : 100%;
+    width: 100%;
     overflow: hidden;
-    
   }
   .sliderData1 {
     background-image: url("https://media.cnn.com/api/v1/images/stellar/prod/140127103345-peninsula-shanghai-deluxe-mock-up.jpg?q=w_2226,h_1449,x_0,y_0,c_fill");
@@ -394,9 +407,9 @@ button:focus {
     background-image: url("https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
   }
   .rightSlide div {
-width : 0vw;
+    width: 0vw;
   }
-  .leftSlide  div {
+  .leftSlide div {
     width: 80vw;
   }
 
@@ -404,11 +417,11 @@ width : 0vw;
     transform: rotate(90deg);
     position: absolute;
     opacity: 0.5;
-    left:2px;
+    left: 2px;
   }
   .downButton {
-    height:8%;
-    bottom:0px;
+    height: 8%;
+    bottom: 0px;
   }
   .sliderContainer .actionButton .upButton {
     /* transform: translateY(-100%); */
@@ -416,44 +429,56 @@ width : 0vw;
     transform: rotate(90deg);
     position: absolute;
     height: 8%;
-  bottom :0px ;
-  left:270px ;
-  overflow: hidden;
-}
- 
+    bottom: 0px;
+    left: 270px;
+    overflow: hidden;
+  }
+
   /* hero section */
   .enjoyYourVacation {
     position: absolute;
-    color:white;
+    color: white;
     top: 3%;
     text-align: center;
+  }
+  .signature {
+    display: hidden;
   }
   .formsection {
     display: flex;
     flex-direction: column;
   }
   .formBox {
-   
     /* margin-top: 20px; */
     margin-left: 3%;
     padding-top: 0px;
-margin-top: -140px;
+    margin-top: -140px;
     padding: 150px;
     width: 20vw;
-    height: 65vh;
+    height: 70vh;
+  }
+  input[type="date"] {
+    width: 200px;
+  }
+  input[type="text"] {
+    width: 200px;
   }
   .formDetails {
-    margin-top: -90px;
+    margin-top: -130px;
+    overflow: visible;
     margin-left: -120px;
     padding: auto;
-    width: 60vw;
-    
+    width: 50vw;
   }
+  /* .subheading {
+    width : 30vw;
+  } */
 
   .formData {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 10vw;
   }
   .formsection {
     margin-top: 10px;
@@ -515,39 +540,37 @@ margin-top: -140px;
   }
   .natureSec {
     flex-direction: column;
-    height:100vh;
+    height: 100vh;
     overflow: hidden;
     position: relative;
   }
- .sideNature {
-  position: absolute;
-  top : 40%;
-  width : 90vw;
-  display: flex;
-  left:28%;
-  align-items: center;
-  
-  
- }
-  .bridgeBg {
-    height :50vh;
+  .sideNature {
     position: absolute;
-    top:10px;
+    top: 40%;
+    width: 90vw;
+    display: flex;
+    left: 28%;
+    align-items: center;
+  }
+  .bridgeBg {
+    height: 50vh;
+    position: absolute;
+    top: 10px;
     width: 40vw;
     display: none;
   }
   .plantBg {
-    position:absolute;
+    position: absolute;
     top: 10px;
-    left:5%;
+    left: 5%;
     width: 90vw;
   }
   .jungleBg {
     display: none;
     position: absolute;
-    left : 70%;
-    top : 60%;
-    width : 40vw;
+    left: 70%;
+    top: 60%;
+    width: 40vw;
     height: 40vh;
   }
 
@@ -560,10 +583,10 @@ margin-top: -140px;
   .servicesButton {
     width: 60vw;
   }
-  .mapSec {
+  .mapSection {
     flex-direction: column;
   }
-  
+
   .natureSec {
     display: none;
   }
@@ -575,8 +598,8 @@ margin-top: -140px;
   padding: 1rem;
 }
 .mapContainer {
-background-color: #05014a;
-padding: 0px;
+  background-color: #05014a;
+  padding: 0px;
 }
 .travel-section-images img {
   width: 80%;
@@ -638,21 +661,9 @@ footer hr {
     padding: 0 10rem;
   }
 
-  
-
-  
-
   .form-date-inputs {
     width: 48%;
   }
-
-  
-
-  
-
- 
-
- 
 
   .update-section > div {
     width: 45%;
@@ -670,7 +681,7 @@ footer hr {
     width: 15%;
   }
 
-  .select-language-footer {
+  .selectLanguage {
     display: flex;
   }
 
@@ -689,8 +700,7 @@ footer hr {
 }
 
 @media screen and (max-width: 768px) {
- 
-  iframe{
+  iframe {
     height: 300px;
   }
 }

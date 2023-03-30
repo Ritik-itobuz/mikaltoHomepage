@@ -132,6 +132,9 @@ function handleTitle(event) {
   const title = document.getElementById("mainTitle");
   if(title)
   {
-    title.innerHTML = "Hotels and Resorts"
+    title.innerHTML = "Hotels and Resorts";
+   
   }
 }
+
+setTimeout(handleTitle,2000);
