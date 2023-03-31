@@ -71,13 +71,15 @@ img {
 
   .navbar li {
     font-size: 18px;
+    
     font-weight: 300;
   }
 
   .navbar ul {
     position: absolute;
-    top: 80%;
+    top: 100%;
     width: 100vw;
+    left:0px;
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -102,8 +104,6 @@ img {
 /* hero section */
 .hero {
   max-width: 90%;
-  /* margin-top: 40rem; */
-  /* background-image: url("../images/HERO\ BG.svg"); */
   background-position-x: left;
   background-position-y: top;
   background-repeat: no-repeat;
@@ -130,9 +130,6 @@ img {
   margin-bottom: 20px;
   margin-right: 350px;
   border-radius: 45px;
-  /* margin-bottom: 60px;
-      padding: 40px 50px;
-      background-color: #c6badc; */
   box-shadow: 3px 5px 10px #7527b0;
 }
 
@@ -140,10 +137,6 @@ img {
   margin-top: -20px;
 }
 
-/* hero section ends */
-
-/* 
-  mikalto luxury section starts here */
 .contentSection {
   width: 35vw;
   height: 40vh;
@@ -173,7 +166,6 @@ img {
   margin-top: 20rem;
   left: 720px;
   z-index: 100;
-  /* left: 800px; */
   background-color: inherit;
 }
 /* 
@@ -267,28 +259,28 @@ button:focus {
   height: 40px;
 }
 
-.activityBg {
+.activityBackground {
   background-image: url("http://localhost:2000/currency/$");
   background-size: cover;
   height: 450px;
 }
 
-.reconnectBg {
+.reconnectBackground {
   background-image: url(./resource/activitySec/treeHotel.jpeg);
   background-size: cover;
   height: 450px;
 }
 
-.giftCardBg {
+.cardBackground {
   background-size: cover;
   height: 550px;
 }
 
-.spaCard {
+.massageCard {
   background-image: url(./resource/gitCardSec/spaImg.jpeg);
 }
 
-.gardenCard {
+.natureCard {
   background-image: url(./resource/gitCardSec/gardenImg.jpeg);
 }
 
@@ -309,19 +301,19 @@ button:focus {
   align-self: center;
 }
 
-.sayHelloCard {
+.helloCard {
   height: 65%;
   width: 30%;
   top: 17.5%;
   left: 55%;
 }
 
-.sayHelloBg {
+.helloBackground {
   background-size: cover;
   height: 700px;
 }
 
-.headShot {
+.reviewerImages {
   height: 90px;
   width: 90px;
   border-radius: 90px;
@@ -386,7 +378,7 @@ input[type="date"] {
 }
 
 @media (max-width: 1300px) {
-  .sayHelloCard {
+  .helloCard {
     height: 80%;
     width: 80%;
     top: 10%;
@@ -577,7 +569,7 @@ input[type="date"] {
   .natureBgFlexBox {
     flex-direction: column;
   }
-  .activitySec {
+  .activitySection {
     display: none;
   }
   .servicesButton {
@@ -689,6 +681,7 @@ footer hr {
     display: flex !important;
     right: 0;
   }
+
 }
 
 .footerLogo {
